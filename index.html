@@ -1,0 +1,13 @@
+<!--update syntax for other libs/frameworks like react as it is meant for angular  -->
+
+<div class="waitTimeChart d-flex justify-content-center align-items-center gp-10 flex-column"
+        *ngFor="let item of avgWaitTimeData; let i = index">
+        <div class="circular-progress" [ngStyle]="getBorderStyle(i, item.avgTime)">
+          <div class="percentage d-flex flex-column justify-content-center align-items-center">
+            <span class="typo1">{{item.avgTime}}</span>
+            <span class="typo3">mins</span>
+          </div>
+        </div>
+
+        <div class="typo2 b-color">{{item.department}}</div>
+      </div>
