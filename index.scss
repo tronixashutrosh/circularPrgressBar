@@ -1,0 +1,28 @@
+.circular-progress {
+    position: relative;
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+    // background: conic-gradient(#3498db 3.6deg, #F5F1FD 0deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circular-progress::before {
+    content: "";
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #ffff;
+}
+
+.percentage {
+    position: relative;
+}
+
+.waitTimeChart {
+    padding-left: 10px;
+    padding-right: 10px;
+}
